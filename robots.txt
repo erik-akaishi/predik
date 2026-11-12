@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://erik-akaishi.github.io/predik/sitemap.xml

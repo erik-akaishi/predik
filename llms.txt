@@ -1,0 +1,23 @@
+# Predik
+
+> Manutenção preditiva para agroindústria, com sensor e software inclusos na assinatura. O sensor lê vibração e temperatura das máquinas, o software transforma o sinal em parada marcada e plano de ação.
+
+A Predik atende PCM (planejamento e controle de manutenção) e diretoria industrial de agroindústrias e indústrias de alimentos, onde parada no susto custa mais do que a peça quebrada. Os números do site são projeções sobre uma empresa-base (300 funcionários, safra de 8 meses, 40 ativos críticos, 12 paradas por ano de 6 horas, R$ 15.000 por hora de linha parada), não resultados medidos.
+
+## Produto
+- [Página inicial](https://erik-akaishi.github.io/predik/): proposta, problema, transformação, sensor, simulador e modelo comercial
+- [O problema](https://erik-akaishi.github.io/predik/#dor): o custo de uma parada no susto, na conta da empresa-base
+- [A transformação](https://erik-akaishi.github.io/predik/#transformacao): da parada no susto à parada marcada, com evidência
+- [O sensor](https://erik-akaishi.github.io/predik/#sensor): como o sensor é por fora, por peça e por dentro
+- [Simulador](https://erik-akaishi.github.io/predik/#preco): estimativa de horas e valor recuperados com os números da planta
+- [Modelo comercial](https://erik-akaishi.github.io/predik/#safra): assinatura paga em 8 meses por ano (safra), contra 12 do mercado
+
+## Empresa
+- [Diagnóstico da sua planta](https://erik-akaishi.github.io/predik/#diagnostico): pedido de diagnóstico com a projeção feita sobre os números da planta
+- [Perguntas frequentes](https://erik-akaishi.github.io/predik/#faq): preço, entressafra, sensor incluso, origem dos números
+
+## Segmentos atendidos
+Agroindústria e indústria de alimentos, com operação sazonal (safra).
+
+## Diferenciais
+Sensor e software inclusos na assinatura; contrato que pausa na entressafra (8 meses pagos por ano em vez de 12); toda conta apresentada com premissa à vista.

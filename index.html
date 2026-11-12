@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="escuro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Predik · Manutenção preditiva para agroindústria</title>
+<meta name="description" content="Manutenção preditiva para agroindústria, com sensor e software inclusos. Projeção: de 12 para 5 paradas por ano, em uma planta de 300 pessoas. Solicite um diagnóstico.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://erik-akaishi.github.io/predik/">
+<meta name="theme-color" content="#140F26">
+<meta name="color-scheme" content="dark light">
+<meta name="author" content="Predik">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/img/sensor-isometrico.svg" as="image" fetchpriority="high">
+<link rel="preload" href="assets/fonts/jetbrains-mono-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jetbrains-mono-500.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Predik">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Predik · Manutenção preditiva para agroindústria">
+<meta property="og:description" content="Manutenção preditiva para agroindústria, com sensor e software inclusos. Projeção: de 12 para 5 paradas por ano, em uma planta de 300 pessoas. Solicite um diagnóstico.">
+<meta property="og:url" content="https://erik-akaishi.github.io/predik/">
+<meta property="og:image" content="https://erik-akaishi.github.io/predik/assets/og-predik.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Predik: manutenção preditiva para agroindústria, sensor e software inclusos.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Predik · Manutenção preditiva para agroindústria">
+<meta name="twitter:description" content="Manutenção preditiva para agroindústria, com sensor e software inclusos. Projeção: de 12 para 5 paradas por ano, em uma planta de 300 pessoas. Solicite um diagnóstico.">
+<meta name="twitter:image" content="https://erik-akaishi.github.io/predik/assets/og-predik.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://erik-akaishi.github.io/predik/#organization","name":"Predik","url":"https://erik-akaishi.github.io/predik/","logo":{"@type":"ImageObject","url":"https://erik-akaishi.github.io/predik/assets/logo-predik.png","width":512,"height":512},"image":"https://erik-akaishi.github.io/predik/assets/og-predik.png","description":"Manutenção preditiva para agroindústria, com sensor e software inclusos na assinatura."},{"@type":"WebSite","@id":"https://erik-akaishi.github.io/predik/#website","url":"https://erik-akaishi.github.io/predik/","name":"Predik","inLanguage":"pt-BR","publisher":{"@id":"https://erik-akaishi.github.io/predik/#organization"}},{"@type":"WebPage","@id":"https://erik-akaishi.github.io/predik/#webpage","url":"https://erik-akaishi.github.io/predik/","name":"Predik · Manutenção preditiva para agroindústria","description":"Manutenção preditiva para agroindústria, com sensor e software inclusos. Projeção: de 12 para 5 paradas por ano, em uma planta de 300 pessoas. Solicite um diagnóstico.","inLanguage":"pt-BR","isPartOf":{"@id":"https://erik-akaishi.github.io/predik/#website"},"about":{"@id":"https://erik-akaishi.github.io/predik/#organization"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://erik-akaishi.github.io/predik/assets/og-predik.png"},"datePublished":"2026-11-12","dateModified":"2026-11-12"},{"@type":"FAQPage","@id":"https://erik-akaishi.github.io/predik/#faq","mainEntityOfPage":{"@id":"https://erik-akaishi.github.io/predik/#webpage"},"mainEntity":[{"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"O preço é público e calculado na tela, no simulador, com os números da sua fábrica. Sensor e software estão inclusos na assinatura. O valor final da assinatura ainda está em definição neste protótipo."}},{"@type":"Question","name":"O que acontece na entressafra?","acceptedAnswer":{"@type":"Answer","text":"O contrato pausa. Você paga os 8 meses da safra, não os 12 do ano."}},{"@type":"Question","name":"Preciso comprar o sensor?","acceptedAnswer":{"@type":"Answer","text":"Não. O sensor vem incluso na assinatura, junto com o software que marca a parada."}},{"@type":"Question","name":"Os números do site são resultados reais?","acceptedAnswer":{"@type":"Answer","text":"São projeções sobre uma empresa-base de 300 pessoas, com 40 ativos críticos, 12 paradas por ano de 6 horas e R$ 15.000 por hora de linha parada. No diagnóstico, a conta é refeita com as premissas da sua planta."}},{"@type":"Question","name":"O que acontece depois que eu peço o diagnóstico?","acceptedAnswer":{"@type":"Answer","text":"Você recebe a projeção com os seus números, vê onde estão as paradas que mais pesam e decide com a conta na mão, sem proposta fechada de saída."}}]}]}</script>
+<style>
+@font-face{font-family:"JetBrains Mono";font-weight:500;font-display:swap;src:url(assets/fonts/jetbrains-mono-500.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-weight:800;font-display:swap;src:url(assets/fonts/jetbrains-mono-800.woff2) format("woff2")}
+:root{--noite:#140F26;--papel:#F5F2F7;--sinal:#34D8C0;--fundo:var(--noite);--tinta:var(--papel);--mudo:#B3AAC2;--linha:#3A3050}
+:root[data-theme="claro"]{--fundo:#F5F2F7;--tinta:#140F26;--mudo:#4F4766;--linha:#D9D2E3}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--fundo);color:var(--tinta);font:500 14px/1.5 "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;-webkit-font-smoothing:antialiased}
+.palco{position:relative;height:420vh}
+.fixo{position:sticky;top:0;height:100vh;min-height:420px;display:grid;grid-template-rows:auto minmax(0,1fr) auto;overflow:hidden}
+.topo{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px}
+.marca{font-weight:800;letter-spacing:-.06em;font-size:20px}
+.marca i{display:inline-block;width:.42em;height:.42em;background:var(--sinal);margin-left:.15em}
+.ctl{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.ctl button{font:inherit;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--tinta);background:transparent;border:1px solid var(--linha);padding:8px 12px;cursor:pointer}
+.ctl button:hover,.ctl button[aria-pressed="true"]{border-color:var(--tinta)}
+.ctl button:focus-visible{outline:2px solid var(--sinal);outline-offset:2px}
+.cena{position:relative;min-height:0}
+canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.legenda{padding:16px 24px 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;width:100%;margin:0 auto}
+.passo{border-top:2px solid var(--linha);padding-top:10px;color:var(--mudo);opacity:.55;transition:opacity .25s,border-color .25s}
+.passo b{display:block;color:var(--tinta);font-weight:800;letter-spacing:.08em;font-size:12px;text-transform:uppercase}
+.passo.on{opacity:1;border-top-color:var(--tinta)}
+.q{display:inline-block;width:10px;height:10px;border:1.5px solid currentColor;margin-right:8px;vertical-align:-1px}
+.passo.on .q{background:var(--sinal);border-color:var(--sinal)}
+#fallback,#estaticas{display:none}
+#fallback{position:absolute;inset:0;align-items:center;justify-content:center}
+#fallback img{max-width:min(720px,92%);max-height:100%;display:block}
+#estaticas{padding:24px;max-width:900px;margin:0 auto}
+#estaticas figure{margin:0 0 40px}
+#estaticas img{width:100%;height:auto;display:block}
+#estaticas figcaption{margin-top:8px;color:var(--mudo);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.sem-webgl #fallback{display:flex}.sem-webgl canvas{display:none}.sem-webgl .palco{height:100vh}.sem-webgl #b-modo{display:none}
+.estatico .palco{display:none}.estatico #estaticas{display:block}
+@media (max-width:720px){.legenda{grid-template-columns:1fr;gap:8px;padding-bottom:16px}.passo span{display:none}.topo{padding:14px 16px}}
+
+:root{--painel:#1B1530;--stx:#34D8C0;--btn-t:#140F26}
+:root[data-theme="claro"]{--painel:#FFFFFF;--sinal:#0E9F8E;--stx:#0B6F63}
+.campo .sensor{position:absolute;left:12%;top:0;width:76%;height:auto}
+.campo .chamadas{position:absolute;inset:0;width:100%;height:100%}
+.campo .pt{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;background:var(--sinal)}
+.campo .n.c{position:absolute;transform:translate(0,-50%)}
+.cap{position:absolute;right:0;top:-34px;display:flex;gap:20px;font-size:12px;color:var(--mudo)}.cap span{display:flex;align-items:center;gap:8px}.cap .n{width:22px;height:22px;font-size:12px}
+.parada{bottom:0;width:min(300px,72%);padding:16px}.parada div{font-size:12px;line-height:1.8}
+.sai .big svg{width:clamp(34px,5vw,56px);height:auto;color:var(--sinal);flex:none}
+.sim input[type=range]::-webkit-slider-thumb{background:var(--sinal)!important}
+.sim input[type=range]::-moz-range-thumb{background:var(--sinal)!important}
+.nav .w>a:first-child svg{height:46px;margin:-6px 0}.rodape svg{height:56px;margin-left:-14px}@media(max-width:860px){.campo{margin-top:44px;aspect-ratio:auto;height:min(78vw,340px);margin-bottom:0}.hero{padding-bottom:270px!important}.parada{width:100%!important;bottom:auto!important;top:100%;margin-top:12px;height:auto!important}.cap{left:0;right:auto}}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+a{color:inherit}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--fundo) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)}
+.nav .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.nav nav{display:flex;gap:28px;font-size:13px}.nav nav a{text-decoration:none;color:var(--tinta)}.nav nav a:hover{color:var(--stx)}
+.btn{display:inline-block;font:800 13px/1 "JetBrains Mono",monospace;letter-spacing:.04em;background:var(--sinal);color:#140F26;padding:14px 20px;text-decoration:none;border:2px solid var(--sinal)}
+.btn2{display:inline-block;font:500 13px/1 "JetBrains Mono",monospace;color:var(--tinta);padding:14px 20px;text-decoration:none;border:2px solid var(--linha)}
+.btn2:hover{border-color:var(--tinta)}
+.eb{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mudo)}
+h1,h2,h3{font-weight:800;letter-spacing:-.06em;word-spacing:-.28em;line-height:1;margin:0}
+h1{font-size:clamp(30px,3.6vw,50px);margin-top:20px}h1 em{font-style:normal;color:var(--stx)}
+h2{font-size:clamp(34px,5vw,60px);margin-top:16px;max-width:900px}
+.grade{background-image:linear-gradient(color-mix(in srgb,var(--tinta) 8%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--tinta) 8%,transparent) 1px,transparent 1px);background-size:60px 60px}
+.hero{position:relative;overflow:hidden;padding:72px 0 64px}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.chip{display:inline-block;margin-top:18px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--sinal);color:var(--stx);padding:5px 10px}
+.premissa{font-size:11px;line-height:1.6;color:var(--mudo);max-width:520px;margin:20px 0 0}
+.faixa{border-top:2px solid var(--linha);padding:40px 0}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:20px}
+.trio>div{border-left:2px solid var(--sinal);padding-left:18px}
+.trio span{display:block;font-size:12px;color:var(--mudo)}
+.trio b{display:block;font-size:clamp(22px,2.1vw,29px);font-weight:800;white-space:nowrap;letter-spacing:-.06em;word-spacing:-.25em;margin-top:8px;line-height:1.1}
+.trio .ar{display:inline-block;width:.8em;height:.8em;vertical-align:-.08em;color:var(--sinal)}.trio em .ar{width:1em;height:1em;vertical-align:-.2em}
+.trio em{display:block;font-style:normal;font-size:13px;color:var(--stx);margin-top:6px}
+.comp{display:flex;gap:40px;margin-top:26px;flex-wrap:wrap}.comp span{display:block;font-size:12px;color:var(--mudo)}.comp b{display:block;font-size:22px;font-weight:800;letter-spacing:-.04em;margin-top:4px}
+@media(max-width:860px){.trio{grid-template-columns:1fr}.trio b{font-size:26px}}
+.hero p.l{font-size:18px;line-height:1.6;max-width:540px;margin:28px 0 0;color:var(--mudo)}
+.hero .acoes{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.campo{position:relative;aspect-ratio:1/1;max-width:520px;width:100%;margin-left:auto}
+.campo canvas{position:absolute;inset:0;width:100%;height:100%}
+.parada{position:absolute;left:0;bottom:6%;width:min(330px,80%);background:var(--painel);border:2px solid var(--linha);padding:20px}
+.parada b{display:flex;gap:12px;align-items:center;font-weight:800;font-size:15px}
+.rombo{display:inline-block;width:12px;height:12px;background:var(--sinal);transform:rotate(45deg)}
+.parada div{margin-top:12px;font-size:13px;line-height:1.9;color:var(--mudo)}
+.parada small{display:block;margin-top:10px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mudo)}
+.sec{padding:96px 0;border-top:2px solid var(--linha)}
+.tres{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.card{border:2px solid var(--linha);background:var(--painel);padding:26px}
+.card h3{font-size:30px;display:flex;align-items:center;gap:14px}
+.n{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;background:var(--tinta);color:var(--fundo);font-size:15px;letter-spacing:0;word-spacing:0}
+.card p{font-size:15px;line-height:1.65;color:var(--mudo);margin:18px 0 24px;min-height:100px}
+.viz{display:flex;align-items:flex-end;gap:5px;height:120px}.viz i{display:block;width:14px;background:var(--mudo);opacity:.7}.viz i.h{background:var(--sinal);opacity:1}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.cal i{height:32px;border:2px solid var(--linha);display:flex;align-items:center;justify-content:center}.cal i.a{background:var(--sinal);border-color:var(--sinal)}.cal i.a:after{content:"";width:9px;height:9px;background:#140F26;transform:rotate(45deg)}
+.mem{display:flex;flex-direction:column;gap:10px;font-size:12px;color:var(--mudo)}.mem div{display:flex;align-items:center;gap:12px}.mem i{display:block;height:12px;background:var(--mudo)}.mem div:first-child i{background:var(--tinta)}
+.sim{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.ent,.sai{border:2px solid var(--linha);background:var(--painel);padding:32px}
+.sai{border-color:var(--sinal);background:transparent}
+.ctrl{margin-bottom:26px}.ctrl label{display:flex;justify-content:space-between;font-size:13px;color:var(--mudo)}.ctrl label b{color:var(--tinta)}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;background:var(--linha);margin:16px 0 0;display:block;outline-offset:6px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;background:var(--tinta);border:0;border-radius:0;cursor:pointer}
+input[type=range]::-moz-range-thumb{width:18px;height:18px;background:var(--tinta);border:0;border-radius:0;cursor:pointer}
+input[type=range]:focus-visible{outline:2px solid var(--sinal)}
+.big{font-size:clamp(56px,9vw,104px);font-weight:800;letter-spacing:-.06em;word-spacing:-.25em;display:flex;align-items:center;gap:14px;margin-top:10px;line-height:1}
+.big .rombo{width:clamp(28px,4vw,44px);height:clamp(28px,4vw,44px)}
+.kpis{display:flex;gap:40px;margin-top:30px;flex-wrap:wrap}.kpis b{display:block;font-size:40px;font-weight:800;letter-spacing:-.06em;word-spacing:-.25em}.kpis span{font-size:12px;color:var(--mudo)}
+.preco{margin-top:28px;border-top:2px solid var(--linha);padding-top:16px;font-size:14px}.preco em{font-style:normal;color:var(--stx)}
+.nota{font-size:11px;line-height:1.6;color:var(--mudo);margin-top:14px}
+.meses{display:flex;gap:8px;margin-top:48px}.meses i{flex:1;height:64px;background:var(--tinta)}.meses i.p{background:repeating-linear-gradient(135deg,var(--sinal) 0 6px,transparent 6px 14px);border:2px solid var(--sinal)}
+.legm{display:flex;justify-content:space-between;margin-top:14px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mudo)}.legm span+span{color:var(--stx)}
+.rodape{padding:56px 0 40px;border-top:2px solid var(--linha);font-size:12px;line-height:1.7;color:var(--mudo)}.rodape .w{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.intro3d{padding:80px 0 24px;border-top:2px solid var(--linha)}
+.topo .marca{display:none}
+.fixo{padding-top:61px}
+.topo{padding:12px 24px}
+@media (max-width:860px){.hero .w,.sim,.tres{grid-template-columns:1fr}.campo{margin:0 auto}.nav nav{display:none}.sec{padding:64px 0}.card p{min-height:0}}
+@media (max-width:520px){.ctl button{padding:6px 8px;font-size:10px}.topo{padding:10px 16px}}
+[data-predik3d] .p3-fixo{top:60px;height:calc(100vh - 60px)}
+.eb:before{content:"";display:inline-block;width:8px;height:8px;background:var(--sinal);margin-right:10px;vertical-align:1px}
+.px{display:flex;height:8px;margin:0 auto;max-width:1200px;padding:0 24px}.px i{display:block;height:8px}
+.btn{display:inline-flex;align-items:center;gap:12px}.btn .ar{width:16px;height:16px}
+.btn.g{padding:18px 26px;font-size:14px}
+.btn:hover{background:var(--stx);border-color:var(--stx);color:#140F26}
+.nav .btn{padding:12px 16px;font-size:12px}
+.sec.alt{background:color-mix(in srgb,var(--painel) 55%,var(--fundo))}
+.sec h2+.lede{margin-top:22px}
+.lede{font-size:18px;line-height:1.6;color:var(--mudo);max-width:640px;margin:0}
+.heat{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.34}.final .heat{opacity:.2}
+.rel{position:relative;overflow:hidden}.rel>.w{position:relative}
+.dor-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;margin-top:48px;align-items:start}
+.dores{display:flex;flex-direction:column;gap:16px}
+.dores div{border-left:2px solid var(--sinal);padding:2px 0 2px 20px}
+.dores b{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--stx);margin-bottom:6px}
+.dores p{margin:0;font-size:16px;line-height:1.6;color:var(--tinta)}
+.conta{border:2px solid var(--linha);background:var(--painel);padding:30px;position:relative}
+.conta:before,.conta:after{content:"";position:absolute;width:22px;height:22px;border:2.5px solid var(--sinal)}
+.conta:before{left:-2px;top:-2px;border-right:0;border-bottom:0}.conta:after{right:-2px;bottom:-2px;border-left:0;border-top:0}
+.conta .lin{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--linha);font-size:14px;color:var(--mudo)}
+.conta .lin b{color:var(--tinta);font-weight:800;text-align:right}
+.conta .tot{margin-top:18px;font-size:clamp(40px,6vw,68px);font-weight:800;letter-spacing:-.06em;word-spacing:-.25em;line-height:1;color:var(--tinta)}
+.conta .tot small{display:block;font-size:13px;letter-spacing:0;word-spacing:0;font-weight:500;color:var(--mudo);margin-top:10px}
+.tick{margin-top:22px;border-top:2px solid var(--linha);padding-top:16px;font-size:13px;line-height:1.6;color:var(--mudo)}.tick b{color:var(--stx);font-size:20px;letter-spacing:-.03em}
+.perda{margin-top:48px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;border:2px solid var(--sinal);padding:28px 30px}
+.perda p{margin:0;font-size:clamp(20px,2.4vw,28px);font-weight:800;letter-spacing:-.05em;word-spacing:-.2em;line-height:1.15;max-width:680px}
+.perda p em{font-style:normal;color:var(--stx)}
+.dte{margin-top:48px;border-top:2px solid var(--linha)}
+.dte .rw{display:grid;grid-template-columns:150px 1fr 1.25fr 1fr;gap:28px;padding:30px 0;border-bottom:2px solid var(--linha);align-items:start}
+.dte .hd{padding:14px 0;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mudo);border-bottom:2px solid var(--linha)}
+.dte .hd.rw{padding:14px 0}
+.dte .m{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.dte .col small{display:none;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mudo);margin-bottom:6px}
+.dte p{margin:0;font-size:15px;line-height:1.6;color:var(--mudo)}
+.dte .num{font-size:clamp(30px,3.4vw,46px);font-weight:800;letter-spacing:-.06em;word-spacing:-.25em;line-height:1;color:var(--tinta);display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.dte .num .ar{width:.7em;height:.7em;color:var(--sinal)}.dte .num em{font-style:normal;font-size:14px;letter-spacing:0;word-spacing:0;font-weight:500;color:var(--stx);margin-left:6px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}.dte .num em .ar{width:14px;height:14px}
+.dte .dor p{color:var(--tinta);font-size:17px;font-weight:500}
+.cx{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:48px;align-items:center}
+.barra{margin-bottom:22px}.barra span{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mudo);margin-bottom:8px}
+.barra div{height:44px;display:flex;align-items:center;padding:0 14px;font-weight:800;font-size:18px;letter-spacing:-.04em;background:var(--tinta);color:var(--fundo)}
+.barra.p div{background:var(--sinal);color:#140F26}
+.tres.q{margin-top:28px}.tres.q .card p{min-height:0;margin:14px 0 0}.tres.q .card h3{font-size:22px}
+.banda{border-top:2px solid var(--linha);border-bottom:2px solid var(--linha);padding:48px 0;background:color-mix(in srgb,var(--painel) 55%,var(--fundo))}
+.banda .w{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.banda h3{font-size:clamp(24px,3vw,38px);max-width:700px;line-height:1.1}
+.acoes{display:flex;gap:12px;flex-wrap:wrap}
+.sai .go{margin-top:28px;border-top:2px solid var(--linha);padding-top:24px}
+.sai .go p{margin:0 0 16px;font-size:15px;line-height:1.6}.sai .go p b{color:var(--stx)}
+.sai .go .btn2{margin-left:0}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.cmp>div{border:2px solid var(--linha);padding:28px;background:var(--painel)}.cmp>div.p{border-color:var(--sinal);background:transparent}
+.cmp .meses{margin-top:18px}.cmp b.t{display:block;font-size:clamp(34px,4.4vw,54px);font-weight:800;letter-spacing:-.06em;word-spacing:-.25em;line-height:1;margin-top:12px}
+.cmp p{margin:16px 0 0;font-size:15px;line-height:1.6;color:var(--mudo)}
+.cmp .meses i{height:40px}.cmp .meses i.x{background:repeating-linear-gradient(135deg,var(--linha) 0 6px,transparent 6px 14px);border:2px solid var(--linha)}
+.inc{margin-top:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.inc div{border-top:2px solid var(--sinal);padding-top:12px;font-size:14px;line-height:1.5}.inc b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.faq{margin-top:40px;border-top:2px solid var(--linha);max-width:860px}
+.faq details{border-bottom:2px solid var(--linha);padding:20px 0}.faq summary{cursor:pointer;font-size:18px;font-weight:800;letter-spacing:-.03em;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";color:var(--stx);font-size:22px;line-height:1}.faq details[open] summary:after{content:"−"}
+.faq summary:focus-visible{outline:2px solid var(--sinal);outline-offset:4px}
+.faq p{margin:14px 0 0;font-size:15px;line-height:1.7;color:var(--mudo);max-width:700px}
+.final{padding:96px 0}.final .w{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.final h2{font-size:clamp(34px,4.6vw,58px)}
+.final ul{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:12px}.final li{display:flex;gap:14px;font-size:15px;line-height:1.5}.final li:before{content:"";width:10px;height:10px;background:var(--sinal);flex:none;margin-top:6px}
+.form{border:2px solid var(--sinal);background:var(--painel);padding:30px;display:grid;gap:18px}
+.form label{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mudo);margin-bottom:6px}
+.form input,.form select{width:100%;font:500 15px/1.3 "JetBrains Mono",monospace;color:var(--tinta);background:var(--fundo);border:2px solid var(--linha);padding:13px 14px;border-radius:0}
+.form input:focus-visible,.form select:focus-visible{outline:2px solid var(--sinal);outline-offset:2px;border-color:var(--sinal)}
+.form .r2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form .res{border-left:2px solid var(--sinal);padding:2px 0 2px 14px;font-size:13px;line-height:1.6;color:var(--mudo)}.form .res b{color:var(--tinta)}
+.form .btn{justify-content:center;width:100%;cursor:pointer;font-size:14px;padding:18px}
+.form .mini{font-size:11px;line-height:1.6;color:var(--mudo);margin:0}
+.ok{display:none;border:2px solid var(--sinal);padding:30px;background:var(--painel)}.ok.on{display:block}.ok h3{font-size:28px}.ok p{margin:14px 0 0;line-height:1.6;color:var(--mudo)}
+.rodape .w>div:last-child{text-align:right}.rodape .tg{font-size:clamp(18px,2vw,24px);font-weight:800;letter-spacing:-.05em;color:var(--tinta);margin-top:14px}.rodape a{color:var(--stx)}
+
+.ic{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;color:var(--stx);flex:none}
+.card h3 .n{background:var(--sinal);color:#140F26}.card h3 .ic{margin-left:auto}
+.campo .n.c,.cap .n{background:transparent!important;color:var(--mudo)!important;border:1px solid color-mix(in srgb,var(--tinta) 22%,transparent);font-size:11px;width:22px;height:22px;font-weight:500}
+.cap{opacity:.7;font-size:11px}
+.campo .chamadas g{stroke:color-mix(in srgb,var(--tinta) 35%,transparent)}
+.parada.pm{padding:0;width:min(300px,78%);overflow:hidden}
+.parada.pm div,.parada.pm span{margin:0;font-size:inherit;line-height:1.3;color:inherit}
+.pm-h{display:flex;align-items:center;gap:14px;padding:16px 18px 12px}
+.pm-i{width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--sinal);color:#140F26!important;flex:none}.pm-i .ic{color:#140F26;width:22px;height:22px}
+.pm-h b{display:block!important;font-size:16px;font-weight:800;letter-spacing:-.03em}.pm-h small{display:block!important;margin:2px 0 0!important;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--stx)}
+.pm-w{display:block;width:100%;height:auto;padding:0 18px}
+.pm-g{display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--linha);margin-top:12px}
+.pm-g span{display:flex;align-items:center;gap:8px;padding:12px 14px;white-space:nowrap;font-size:12px;font-weight:800;border-bottom:1px solid var(--linha)}.pm-g span:nth-child(odd){border-right:1px solid var(--linha)}.pm-g span:nth-last-child(-n+2){border-bottom:0}
+.pm-g .ic{width:18px;height:18px}
+.parada.pm .pm-f{padding:8px 18px 12px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mudo)}
+.dores div{display:grid;grid-template-columns:44px 1fr;column-gap:16px;border-left:0;padding:0}.dores .ib{width:44px;height:44px;border:2px solid var(--linha);display:flex;align-items:center;justify-content:center}
+.dores b{margin:0 0 4px}
+.dte .m{display:flex;align-items:center;justify-content:center;width:52px;height:52px;border:2px solid var(--linha)}.dte .m .ic{width:26px;height:26px}
+.itens{display:flex;flex-direction:column;gap:0;border-top:2px solid var(--linha)}
+.itens>div{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:22px 0;border-bottom:2px solid var(--linha);align-items:center}
+.itens .ib{width:52px;height:52px;border:2px solid var(--sinal);display:flex;align-items:center;justify-content:center}.itens .ib .ic{width:26px}
+.itens b{color:var(--tinta);display:block;font-size:20px;font-weight:800;letter-spacing:-.04em;word-spacing:-.15em}.itens span{display:block;font-size:14px;color:var(--mudo);margin-top:4px}
+.inc div .ic{display:block;margin-bottom:10px}
+.btn2{display:inline-flex;align-items:center;justify-content:center}
+html{overflow-x:hidden}
+.nav{display:flex;justify-content:center}.nav>.w{width:100%;max-width:1200px}
+.w{width:100%;max-width:1200px;margin-left:auto;margin-right:auto}
+[data-predik3d] .p3-fixo{max-width:1400px;margin:0 auto;width:100%}
+.rodape .w,.banda .w,.final .w,.hero .w{max-width:1200px}
+@media(min-width:1500px){.nav{padding:0}.nav>.w{max-width:1200px}}
+@media(max-width:860px){.w,.nav>.w{max-width:680px}.hero .w{max-width:680px}.campo{max-width:420px}.parada.pm{max-width:300px}}
+@media(max-width:860px){.acoes{max-width:100%}.btn.g{max-width:420px}}
+.heat{left:50%;right:auto;width:min(100%,1400px);transform:translateX(-50%)}
+.burger{display:none;background:transparent;border:2px solid var(--linha);color:var(--tinta);width:44px;height:44px;padding:0;cursor:pointer;align-items:center;justify-content:center}
+.burger .ic{color:var(--tinta);width:24px;height:24px}.burger .i-b{display:none}.nav.open .burger .i-a{display:none}.nav.open .burger .i-b{display:inline-flex}.burger span{display:inline-flex}
+.burger:focus-visible{outline:2px solid var(--sinal);outline-offset:2px}
+@media(max-width:860px){.burger{display:inline-flex}.nav .w{gap:10px}.nav .w>a:first-child{margin-right:auto}
+.nav nav{display:none!important;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:var(--fundo);border-bottom:2px solid var(--linha);padding:8px 0 16px}
+.nav.open nav{display:flex!important}.nav nav a{padding:16px 24px;font-size:16px;border-bottom:1px solid var(--linha);max-width:680px;width:100%;margin:0 auto;box-sizing:border-box}.nav nav a:last-child{border-bottom:0}}
+.nav .nav-cta{display:none!important}
+@media(max-width:400px){.nav>.w>.btn{display:none}.nav .nav-cta{display:flex!important;margin:16px 24px 0;width:calc(100% - 48px);max-width:none;box-sizing:border-box;padding:16px 18px;font-size:13px;border:2px solid var(--sinal);justify-content:center;text-align:center}.nav nav a.nav-cta{border-bottom:2px solid var(--sinal)}}
+.tres>*,.card{min-width:0}.viz{gap:3px}.viz i{flex:1 1 0;width:auto;min-width:0}.mem i{max-width:60%}.mem div{min-width:0}.cal{min-width:0}
+@media(max-width:520px){.acoes{flex-direction:column;align-items:stretch}.acoes .btn,.acoes .btn2,.perda .btn,.sai .btn{width:100%;max-width:360px;justify-content:center;text-align:center}.perda .btn,.sai .acoes{max-width:360px}.form .btn{max-width:none}.btn.g{padding:16px 18px;font-size:13px}.hero p.l{font-size:16px;margin-top:22px}.heat{opacity:.2}.final .heat{opacity:.12}.perda{padding:22px 20px}.conta{padding:22px}.form{padding:22px}.sec{padding:56px 0}.banda .acoes{width:100%}[data-predik3d] .p3-passo.on span{display:block}}
+@media(max-width:860px){.final{padding:64px 0}.banda{padding:36px 0}.eb{line-height:1.5}}
+@media(max-width:860px){.dor-grid,.cx,.cmp,.final .w{grid-template-columns:1fr}.dte .rw{grid-template-columns:1fr;gap:18px;padding:26px 0}.dte .hd{display:none}.dte .col small{display:block}.inc{grid-template-columns:1fr 1fr}.final .w{gap:36px}.rodape .w>div:last-child{text-align:left}.form .r2{grid-template-columns:1fr}.nav .btn{padding:10px 12px;font-size:11px}}
+
+.pular{position:absolute;left:12px;top:-60px;z-index:100;background:#34D8C0;color:#140F26;padding:12px 16px;font-weight:800;text-decoration:none}
+.pular:focus{top:12px}
+.logo-link{display:inline-block;line-height:0;min-height:44px}
+.logo-link:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #34D8C0;outline-offset:3px}
+main:focus{outline:none}
+.p3-passo{opacity:1!important}
+.p3-passo:not(.on) b{color:var(--p-mudo)}
+.p3-passo.on b{color:var(--p-tinta)}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="topo"></div>
+<a class="pular" href="#conteudo">Ir para o conteúdo</a>
+<header class="nav"><div class="w"><a class="logo-link" href="#topo" aria-label="Predik, voltar ao topo da página"><svg aria-hidden="true" focusable="false" height="46" style="display:block;width:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 683 256"><path fill-rule="evenodd" d="M68.00 20.00L65.64 20.06L63.30 20.23L60.96 20.52L58.64 20.92L56.34 21.44L54.07 22.07L51.83 22.81L49.63 23.65L47.48 24.61L45.37 25.67L43.32 26.83L41.33 28.09L39.41 29.45L37.55 30.90L35.77 32.43L34.06 34.06L32.43 35.77L30.90 37.55L29.45 39.41L28.09 41.33L26.83 43.32L25.67 45.37L24.61 47.48L23.65 49.63L22.81 51.83L22.07 54.07L21.44 56.34L20.92 58.64L20.52 60.96L20.23 63.30L20.06 65.64L20.00 68.00L20.00 167.55L59.55 128.00L128.00 59.55L196.45 128.00L182.45 114.00L235.48 60.97L235.48 60.96L235.08 58.64L234.56 56.34L233.93 54.07L233.19 51.83L232.35 49.63L231.39 47.48L230.33 45.37L229.17 43.32L227.91 41.33L226.55 39.41L225.10 37.55L223.57 35.77L221.94 34.06L220.23 32.43L218.45 30.90L216.59 29.45L214.67 28.09L212.68 26.83L210.63 25.67L208.52 24.61L206.37 23.65L204.17 22.81L201.93 22.07L199.66 21.44L197.36 20.92L195.04 20.52L192.70 20.23L190.36 20.06L188.00 20.00ZM20.52 195.04L20.92 197.36L21.44 199.66L22.07 201.93L22.81 204.17L23.65 206.37L24.61 208.52L25.67 210.63L26.83 212.68L28.09 214.67L29.45 216.59L30.90 218.45L32.43 220.23L34.06 221.94L35.77 223.57L37.55 225.10L39.41 226.55L41.33 227.91L43.32 229.17L45.37 230.33L47.48 231.39L49.63 232.35L51.83 233.19L54.07 233.93L56.34 234.56L58.64 235.08L60.96 235.48L63.30 235.77L65.64 235.94L68.00 236.00L188.00 236.00L190.36 235.94L192.70 235.77L195.04 235.48L197.36 235.08L199.66 234.56L201.93 233.93L204.17 233.19L206.37 232.35L208.52 231.39L210.63 230.33L212.68 229.17L214.67 227.91L216.59 226.55L218.45 225.10L220.23 223.57L221.94 221.94L223.57 220.23L225.10 218.45L226.55 216.59L227.91 214.67L229.17 212.68L230.33 210.63L231.39 208.52L232.35 206.37L233.19 204.17L233.93 201.93L234.56 199.66L235.08 197.36L235.48 195.04L235.77 192.70L235.94 190.36L236.00 188.00L236.00 88.45L196.45 128.00L128.00 196.45L73.55 142.00L20.52 195.03Z" fill="#F5F2F7"/><path d="M145.11 128.00L128.00 145.11L110.89 128.00L128.00 110.89Z" fill="#34D8C0"/><path fill="#F5F2F7" d="M308.008 180.72V104.80000000000001H320.696V115.72H323.608L320.696 118.736Q320.696 111.768 324.856 107.76400000000001Q329.016 103.76 336.088 103.76Q344.72 103.76 349.92 109.688Q355.12 115.616 355.12 125.6V141.096Q355.12 147.752 352.78 152.692Q350.44 157.632 346.176 160.336Q341.912 163.04 336.088 163.04Q329.016 163.04 324.856 159.036Q320.696 155.032 320.696 148.064L323.608 151.08H320.592L321.008 164.704V180.72ZM331.512 151.808Q336.504 151.808 339.312 148.89600000000002Q342.12 145.984 342.12 140.576V126.224Q342.12 120.816 339.312 117.904Q336.504 114.992 331.512 114.992Q326.624 114.992 323.81600000000003 117.956Q321.008 120.92 321.008 126.224V140.576Q321.008 145.88 323.81600000000003 148.844Q326.624 151.808 331.512 151.808Z M369.176 162.0V104.80000000000001H381.448V115.72H384.67199999999997L380.82399999999996 122.376Q380.82399999999996 113.12 384.984 108.44Q389.144 103.76 397.256 103.76Q406.51199999999994 103.76 411.816 109.48Q417.12 115.2 417.12 125.28800000000001V129.448H403.496V126.224Q403.496 120.712 400.63599999999997 117.696Q397.77599999999995 114.68 392.784 114.68Q387.688 114.68 384.932 117.696Q382.176 120.712 382.176 126.224V162.0Z M450.1039999999999 163.04Q442.82399999999996 163.04 437.41599999999994 160.232Q432.008 157.424 429.044 152.38Q426.0799999999999 147.336 426.0799999999999 140.576V126.224Q426.0799999999999 119.464 429.044 114.42Q432.008 109.376 437.41599999999994 106.56800000000001Q442.82399999999996 103.76 450.1039999999999 103.76Q457.28 103.76 462.63599999999997 106.56800000000001Q467.99199999999996 109.376 470.95599999999996 114.42Q473.91999999999996 119.464 473.91999999999996 126.224V136.52H438.66399999999993V140.576Q438.66399999999993 146.608 441.5759999999999 149.676Q444.48799999999994 152.744 450.20799999999997 152.744Q454.57599999999996 152.744 457.28 151.236Q459.9839999999999 149.728 460.71199999999993 146.816H473.50399999999996Q472.04799999999994 154.2 465.65199999999993 158.62Q459.256 163.04 450.1039999999999 163.04ZM461.33599999999996 129.24V126.12Q461.33599999999996 120.19200000000001 458.52799999999996 117.02000000000001Q455.71999999999997 113.848 450.1039999999999 113.848Q444.48799999999994 113.848 441.5759999999999 117.072Q438.66399999999993 120.29599999999999 438.66399999999993 126.224V128.40800000000002L462.27199999999993 128.2Z M504.51199999999994 163.04Q495.9839999999999 163.04 490.7319999999999 157.112Q485.4799999999999 151.184 485.4799999999999 141.2V125.70400000000001Q485.4799999999999 115.616 490.67999999999995 109.688Q495.87999999999994 103.76 504.51199999999994 103.76Q511.58399999999995 103.76 515.7439999999999 107.76400000000001Q519.9039999999999 111.768 519.9039999999999 118.736L516.992 115.72H520.0079999999999L519.5919999999999 102.096V86.08H532.5919999999999V162.0H519.9039999999999V151.08H516.992L519.9039999999999 148.064Q519.9039999999999 155.032 515.7439999999999 159.036Q511.58399999999995 163.04 504.51199999999994 163.04ZM509.0879999999999 151.808Q514.0799999999999 151.808 516.8359999999999 148.844Q519.5919999999999 145.88 519.5919999999999 140.576V126.224Q519.5919999999999 120.92 516.8359999999999 117.956Q514.0799999999999 114.992 509.0879999999999 114.992Q504.09599999999995 114.992 501.2879999999999 117.904Q498.4799999999999 120.816 498.4799999999999 126.224V140.576Q498.4799999999999 145.984 501.2879999999999 148.89600000000002Q504.09599999999995 151.808 509.0879999999999 151.808Z M545.5039999999999 162.0V150.144H565.4719999999999V116.55199999999999H548.1039999999999V104.80000000000001H577.9519999999999V150.144H595.632V162.0ZM570.6719999999999 95.232Q566.7199999999999 95.232 564.4319999999999 93.20400000000001Q562.1439999999999 91.176 562.1439999999999 87.744Q562.1439999999999 84.312 564.4319999999999 82.28399999999999Q566.7199999999999 80.256 570.6719999999999 80.256Q574.6239999999999 80.256 576.9119999999998 82.28399999999999Q579.1999999999998 84.312 579.1999999999998 87.744Q579.1999999999998 91.176 576.9119999999998 93.20400000000001Q574.6239999999999 95.232 570.6719999999999 95.232Z M605.3199999999999 162.0V86.08H618.3199999999999V127.26400000000001H627.3679999999999L641.3039999999999 104.80000000000001H655.8639999999999L638.5999999999999 132.464L656.1759999999999 162.0H641.3039999999999L627.3679999999999 138.288H618.3199999999999V162.0Z"/></svg></a>
+<nav id="menu" aria-label="Principal"><a href="#dor">O problema</a><a href="#transformacao">A transformação</a><a href="#sensor">O sensor</a><a href="#preco">Simulador</a><a href="#safra">Modelo comercial</a><a class="btn nav-cta" href="#diagnostico">Solicite um diagnóstico da sua planta <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg></a></nav>
+<a class="btn" href="#diagnostico">Diagnóstico <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg></a><button class="burger" type="button" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span class="i-a"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg></span><span class="i-b"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg></span></button></div></header>
+<main id="conteudo" tabindex="-1">
+<section class="hero grade"><div class="w"><div>
+<div class="eb">Manutenção preditiva · agroindústria e alimentos</div>
+
+<h1>Manutenção preditiva para agroindústria, sensor e software inclusos<em>.</em></h1>
+<p class="l">De 12 paradas por ano para 5: +42 horas de linha rodando. Preço público e simulador na tela.</p>
+<div class="acoes"><a class="btn g" href="#diagnostico">Solicite um diagnóstico da sua planta <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg></a><a class="btn2" href="#preco">Faça uma simulação</a></div>
+<p class="premissa">Empresa-base: 12 paradas por ano de 6 h; cada hora de linha rodando vale R$ 15.000. Projeção, não resultado medido.</p></div>
+<div class="campo"><canvas id="campo" aria-hidden="true"></canvas>
+<img class="sensor" alt="Sensor Predik, vista isométrica" src="assets/img/sensor-isometrico.svg" width="520" height="520" decoding="async" fetchpriority="high">
+<svg class="chamadas" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><g stroke="var(--tinta)" stroke-width="1.5" fill="none" vector-effect="non-scaling-stroke"><path vector-effect="non-scaling-stroke" d="M44.3 16.4L88 8"/><path vector-effect="non-scaling-stroke" d="M67.7 38L88 38"/></g></svg>
+<i class="pt" style="left:44.3%;top:16.4%"></i><i class="pt" style="left:67.7%;top:38%"></i>
+<span class="n c" style="left:88%;top:8%">1</span><span class="n c" style="left:88%;top:38%">2</span>
+<div class="cap"><span><b class="n">1</b>Vibração triaxial</span><span><b class="n">2</b>Temperatura</span></div>
+<div class="parada pm" aria-hidden="true"><div class="pm-h"><span class="pm-i"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4" /><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" /><path d="M12 16h.01" /></svg></span><div><b>Motor 12</b><small>Parada marcada</small></div></div><svg class="pm-w" viewBox="0 0 240 56" style="color:var(--mudo)" preserveAspectRatio="none"><rect x="0" y="46" width="8" height="10" fill="currentColor"/><rect x="12" y="44" width="8" height="12" fill="currentColor"/><rect x="24" y="47" width="8" height="9" fill="currentColor"/><rect x="36" y="43" width="8" height="13" fill="currentColor"/><rect x="48" y="45" width="8" height="11" fill="currentColor"/><rect x="60" y="46" width="8" height="10" fill="currentColor"/><rect x="72" y="42" width="8" height="14" fill="currentColor"/><rect x="84" y="44" width="8" height="12" fill="currentColor"/><rect x="96" y="40" width="8" height="16" fill="currentColor"/><rect x="108" y="43" width="8" height="13" fill="currentColor"/><rect x="120" y="38" width="8" height="18" fill="currentColor"/><rect x="132" y="34" width="8" height="22" fill="currentColor"/><rect x="144" y="36" width="8" height="20" fill="currentColor"/><rect x="156" y="29" width="8" height="27" fill="currentColor"/><rect x="168" y="25" width="8" height="31" fill="#34D8C0"/><rect x="180" y="28" width="8" height="28" fill="#34D8C0"/><rect x="192" y="20" width="8" height="36" fill="#34D8C0"/><rect x="204" y="14" width="8" height="42" fill="#34D8C0"/><rect x="216" y="16" width="8" height="40" fill="#34D8C0"/><rect x="228" y="6" width="8" height="50" fill="#34D8C0"/></svg><div class="pm-g"><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M16 3l0 4" /><path d="M8 3l0 4" /><path d="M4 11l16 0" /><path d="M8 15h2v2h-2z" /></svg>Qui 06:00</span><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6 -6a6 6 0 0 1 -8 -8l3.5 3.5" /></svg>Rolamento</span><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M21 21v-2a4 4 0 0 0 -3 -3.85" /></svg>2 técnicos</span><span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg>3ª vez</span></div><div class="pm-f">Exemplo ilustrativo</div></div></div></div></section>
+<section class="sec rel" id="dor"><canvas class="heat" data-heat="r" aria-hidden="true"></canvas><div class="w"><div class="eb">O problema</div>
+<h2>Toda parada no susto custa mais do que a peça quebrada.</h2>
+<div class="dor-grid"><div class="dores">
+<div><span class="ib"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h2.5" /><path d="M19.001 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M19.001 15.5v1.5" /><path d="M19.001 21v1.5" /><path d="M22.032 17.25l-1.299 .75" /><path d="M17.27 20l-1.3 .75" /><path d="M15.97 17.25l1.3 .75" /><path d="M20.733 20l1.3 .75" /></svg></span><span><b>Para o PCM</b><p>Descobre a falha com a máquina já parada, sem peça e sem equipe.</p></span></div>
+<div><span class="ib"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" /></svg></span><span><b>Para o diretor industrial</b><p>Pedido atrasado e produção para recuperar. A conta chega no fim do mês.</p></span></div>
+<div><span class="ib"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a10 10 0 1 0 20 0" /><path d="M12 19a10 10 0 0 1 10 -10" /><path d="M2 9a10 10 0 0 1 10 10" /><path d="M12 4a9.7 9.7 0 0 1 2.99 7.5" /><path d="M9.01 11.5a9.7 9.7 0 0 1 2.99 -7.5" /></svg></span><span><b>Para a safra</b><p>Hora de linha perdida no pico não volta.</p></span></div>
+</div>
+<div class="conta"><div class="eb">A conta da empresa-base · projeção</div>
+<div class="lin"><span>Paradas não planejadas por ano</span><b>12</b></div>
+<div class="lin"><span>Horas por parada</span><b>6 h</b></div>
+<div class="lin"><span>Custo por hora de linha parada</span><b>R$ 15.000</b></div>
+<div class="tot">R$ 1,08 mi<small>por ano em parada não planejada. R$ 90 mil por mês, R$ 250 por minuto.</small></div>
+<div class="tick">Se a linha da empresa-base estivesse parada desde que você abriu esta página, ela já teria perdido <b id="tick">R$ 0</b>.</div></div></div>
+<div class="perda"><p>Esperar mais um ano é aceitar <em>R$ 1,08 mi</em> de parada. Com a Predik, a projeção é <em>R$ 450 mil</em>.</p><a class="btn g" href="#diagnostico">Solicite um diagnóstico da sua planta <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg></a></div>
+</div></section>
+<section class="sec" id="transformacao"><div class="w"><div class="eb">A transformação · dor, mudança e evidência</div>
+<h2>Da parada no susto à parada marcada.</h2>
+<div class="dte"><div class="rw hd"><span></span><span>A dor</span><span>A transformação</span><span>A evidência</span></div>
+<div class="rw"><div class="m" role="img" aria-label="Paradas"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4" /><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" /><path d="M12 16h.01" /></svg></div>
+<div class="col dor"><small>A dor</small><p>12 paradas não planejadas por ano, descobertas só depois que a máquina parou.</p></div>
+<div class="col"><small>A transformação</small><div class="num">12 <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg> 5<em>−58%</em></div><p>7 das 12 viram parada marcada, com peça separada e equipe escalada.</p></div>
+<div class="col"><small>A evidência</small><p>Com 100 paradas por ano, a mesma proporção leva a 42. Teste no simulador.</p></div></div>
+<div class="rw"><div class="m" role="img" aria-label="Tempo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12l3 2" /><path d="M12 7v5" /></svg></div>
+<div class="col dor"><small>A dor</small><p>72 horas por ano com a linha parada.</p></div>
+<div class="col"><small>A transformação</small><div class="num">+42 h<em>72 h <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg> 30 h</em></div><p>Mais 42 horas de linha rodando, em vez de produção travada.</p></div>
+<div class="col"><small>A evidência</small><p>12 × 6 h contra 5 × 6 h. A conta está aberta e as premissas são editáveis.</p></div></div>
+<div class="rw"><div class="m" role="img" aria-label="Financeiro"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1 -1.8 -1" /><path d="M12 7v10" /></svg></div>
+<div class="col dor"><small>A dor</small><p>R$ 1,08 milhão por ano saindo da operação em parada.</p></div>
+<div class="col"><small>A transformação</small><div class="num">R$ 630 mil<em>por ano</em></div><p>Produção recuperada: o custo de parada cai de R$ 1,08 mi para R$ 450 mil.</p></div>
+<div class="col"><small>A evidência</small><p>72 h × R$ 15.000 contra 30 h × R$ 15.000. Troque o custo por hora e veja mudar.</p></div></div>
+</div>
+<p class="nota" style="margin-top:20px">Projeção sobre a empresa-base de 300 pessoas, 40 ativos críticos e safra de 8 meses. Redução de 12 para 5 paradas (proporção mantida), não resultado medido.</p>
+</div></section>
+<section class="sec alt" id="dinheiro"><div class="w"><div class="eb">O que muda no caixa</div>
+<h2>Mais lucro, menos custo, investimento mais enxuto.</h2>
+<div class="cx"><div>
+<div class="barra"><span>Custo de parada hoje</span><div style="width:100%">R$ 1,08 mi por ano</div></div>
+<div class="barra p"><span>Com a Predik (projeção)</span><div style="width:41.7%;min-width:170px">R$ 450 mil</div></div>
+<p class="lede" style="font-size:16px;margin-top:8px"><b style="color:var(--stx)">R$ 630 mil</b> a menos em parada por ano.</p></div>
+<div class="itens">
+<div><span class="ib"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6 -6l4 4l8 -8" /><path d="M14 7l7 0l0 7" /></svg></span><span><b>Mais lucro</b><span>42 horas de linha rodando a mais por ano.</span></span></div>
+<div><span class="ib"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1 -1.8 -1" /><path d="M12 7v10" /></svg></span><span><b>Menos custo</b><span>Menos conserto de emergência e produção a recuperar.</span></span></div>
+<div><span class="ib"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M15 19l2 2l4 -4" /></svg></span><span><b>Investimento enxuto</b><span>Sensor e software inclusos. Você paga 8 meses por ano.</span></span></div>
+</div></div>
+<div class="acoes" style="margin-top:40px"><a class="btn g" href="#diagnostico">Solicite um diagnóstico da sua planta <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg></a><a class="btn2" href="#preco">Faça uma simulação</a></div>
+</div></section>
+<section class="intro3d" id="sensor"><div class="w"><div class="eb">O sensor</div><h2>Ele escuta a máquina. Veja por fora, por peça e por dentro.</h2>
+<p class="lede">Incluso na assinatura. Role a página para ver por dentro.</p></div></section>
+<div data-predik3d data-altura-scroll="420" data-tema="escuro" role="region" aria-label="Sensor Predik em 3D, animado pelo scroll">
+<style>
+[data-predik3d]{--p-tinta:#F5F2F7;--p-mudo:#B3AAC2;--p-linha:#3A3050;--p-sinal:#34D8C0;position:relative;height:420vh;color:var(--p-tinta);font:500 14px/1.5 "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;box-sizing:border-box}
+[data-predik3d][data-tema="claro"]{--p-tinta:#140F26;--p-mudo:#4F4766;--p-linha:#D9D2E3}
+[data-predik3d] *{box-sizing:border-box}
+[data-predik3d] .p3-fixo{position:sticky;top:0;height:100vh;min-height:420px;display:grid;grid-template-rows:minmax(0,1fr) auto;overflow:hidden}
+[data-predik3d] .p3-cena{position:relative;min-height:0}
+[data-predik3d] .p3-cena canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+[data-predik3d] .p3-fb{display:none;position:absolute;inset:0;align-items:center;justify-content:center}
+[data-predik3d] .p3-fb img{max-width:min(720px,92%);max-height:100%;display:block}
+[data-predik3d] .p3-leg{padding:16px 24px 28px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;width:100%;margin:0 auto}
+[data-predik3d] .p3-passo{border-top:2px solid var(--p-linha);padding-top:10px;color:var(--p-mudo);opacity:.55;transition:opacity .25s,border-color .25s}
+[data-predik3d] .p3-passo b{display:block;color:var(--p-tinta);font-weight:800;letter-spacing:.08em;font-size:12px;text-transform:uppercase}
+[data-predik3d] .p3-passo.on{opacity:1;border-top-color:var(--p-tinta)}
+[data-predik3d] .p3-q{display:inline-block;width:10px;height:10px;border:1.5px solid currentColor;margin-right:8px;vertical-align:-1px}
+[data-predik3d] .p3-passo.on .p3-q{background:var(--p-sinal);border-color:var(--p-sinal)}
+[data-predik3d] .p3-est{display:none;padding:24px;max-width:900px;margin:0 auto}
+[data-predik3d] .p3-est figure{margin:0 0 40px}
+[data-predik3d] .p3-est img{width:100%;height:auto;display:block}
+[data-predik3d] .p3-est figcaption{margin-top:8px;color:var(--p-mudo);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+[data-predik3d].p3-sem-webgl{height:100vh}
+[data-predik3d].p3-sem-webgl canvas{display:none}
+[data-predik3d].p3-sem-webgl .p3-fb{display:flex}
+[data-predik3d].p3-estatico{height:auto}
+[data-predik3d].p3-estatico .p3-fixo{display:none}
+[data-predik3d].p3-estatico .p3-est{display:block}
+@media (max-width:720px){[data-predik3d] .p3-leg{grid-template-columns:1fr;gap:8px;padding:12px 16px 16px}[data-predik3d] .p3-passo span{display:none}}
+</style>
+<div class="p3-fixo">
+  <div class="p3-cena">
+    <canvas role="img" aria-label="Sensor Predik: visão externa, expandida e interna, conforme o scroll"></canvas>
+    <div class="p3-fb"><img alt="Sensor Predik (imagem estática, WebGL indisponível)"></div>
+  </div>
+  <div class="p3-leg" aria-live="polite">
+    <div class="p3-passo on"><b><i class="p3-q"></i>1 · Visão externa</b><span>O sensor fixado na máquina, lendo vibração e temperatura o dia inteiro.</span></div>
+    <div class="p3-passo"><b><i class="p3-q"></i>2 · Visão expandida</b><span>As peças separadas: sensores de vibração e temperatura, eletrônica, bateria e rádio.</span></div>
+    <div class="p3-passo"><b><i class="p3-q"></i>3 · Visão interna</b><span>O sinal sai pelo rádio e chega à plataforma, que marca a parada.</span></div>
+  </div>
+</div>
+<div class="p3-est">
+  <figure><img alt="Visão externa do sensor Predik"><figcaption>Visão externa · o sensor fixado na máquina</figcaption></figure>
+  <figure><img alt="Visão expandida do sensor Predik, com as peças separadas"><figcaption>Visão expandida · as peças separadas</figcaption></figure>
+  <figure><img alt="Visão interna do sensor Predik, com o LED aceso"><figcaption>Visão interna · o sinal sai pelo rádio</figcaption></figure>
+</div>
+
+
+
+</div>
+
+<section class="sec" id="como"><div class="w"><div class="eb">Como funciona</div><h2>Do sinal da máquina à parada marcada.</h2>
+<div class="tres">
+<div class="card"><h3><span class="n">1</span>Sinal<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12h-2c-.894 0 -1.662 -.857 -1.761 -2c-.296 -3.45 -.749 -6 -2.749 -6s-2.5 3.582 -2.5 8s-.5 8 -2.5 8s-2.452 -2.547 -2.749 -6c-.1 -1.147 -.867 -2 -1.763 -2h-2" /></svg></h3><p>O sensor lê vibração e temperatura da máquina o dia inteiro. Quando algo muda, o sinal aparece.</p><div class="viz"><i style="height:14px"></i><i style="height:22px"></i><i style="height:18px"></i><i style="height:30px"></i><i style="height:26px"></i><i style="height:44px"></i><i style="height:38px"></i><i style="height:70px"></i><i class="h" style="height:96px"></i><i class="h" style="height:120px"></i><i class="h" style="height:88px"></i><i style="height:52px"></i><i style="height:34px"></i><i style="height:28px"></i><i style="height:20px"></i><i style="height:16px"></i></div></div>
+<div class="card"><h3><span class="n">2</span>Plano<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.5 21h-5.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v6" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M15 19l2 2l4 -4" /></svg></h3><p>O sinal vira parada marcada: dia, janela, peça separada e equipe escalada.</p><div class="cal"><i></i><i></i><i></i><i class="a"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<div class="card"><h3><span class="n">3</span>Memória<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8l0 4l2 2" /><path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" /></svg></h3><p>Cada máquina lembra do que já viveu. A próxima decisão começa na história dela.</p><div class="mem"><div><i style="width:220px"></i>Motor 12 · rolamento</div><div><i style="width:150px"></i>Motor 12 · alinhamento</div><div><i style="width:90px"></i>Motor 12 · lubrificação</div></div></div>
+</div></div></section>
+<div class="banda"><div class="w"><h3>Quer ver esse caminho na sua planta, com os seus números?</h3><div class="acoes"><a class="btn g" href="#diagnostico">Solicite um diagnóstico da sua planta <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg></a><a class="btn2" href="#preco">Faça uma simulação</a></div></div></div>
+<section class="sec" id="preco"><div class="w"><div class="eb">Simulador · preço público</div><h2>Calcule quantas horas a sua fábrica pode ganhar.</h2>
+<p class="lede">Troque pelos números da sua planta.</p>
+<div class="sim"><div class="ent">
+<div class="ctrl"><label for="s-maq">Máquinas monitoradas <b id="v-maq">40</b></label><input id="s-maq" type="range" min="10" max="200" step="5" value="40"></div>
+<div class="ctrl"><label for="s-par">Paradas não planejadas por ano <b id="v-par">12</b></label><input id="s-par" type="range" min="2" max="36" step="1" value="12"></div>
+<div class="ctrl"><label for="s-hor">Horas por parada <b id="v-hor">6</b></label><input id="s-hor" type="range" min="1" max="24" step="1" value="6"></div>
+<div class="ctrl"><label for="s-cus">Custo por hora de linha parada <b id="v-cus">R$ 15.000</b></label><input id="s-cus" type="range" min="2000" max="50000" step="500" value="15000"></div>
+</div><div class="sai"><div class="eb">Projeção</div>
+<div class="big"><span id="o-a">12</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-label="para" role="img"><path d="M3 12h17M13 5l7 7-7 7"/></svg><span id="o-d">5</span></div>
+<div style="font-size:15px;color:var(--mudo);margin-top:8px">paradas não planejadas por ano</div>
+<div class="kpis"><div><b id="o-h">42 h</b><span>de linha rodando a mais</span></div><div><b id="o-r">R$ 630 mil</b><span>em produção recuperada por ano</span></div></div>
+<div class="comp"><div><span>Custo de parada hoje</span><b id="o-hoje">R$ 1,08 mi</b></div><div><span>Com a Predik (projeção)</span><b id="o-com">R$ 450 mil</b></div></div>
+<div class="preco">Assinatura mensal, sensores inclusos: <em>calculada na hora, sem proposta</em></div>
+<div class="go"><p>Com <b id="g-maq">40</b> máquinas e <b id="g-par">12</b> paradas por ano, cada mês de espera custa <b id="g-mes">R$ 90 mil</b> em parada. Leve este cenário para um diagnóstico da sua planta.</p><div class="acoes"><a class="btn g" href="#diagnostico">Solicitar diagnóstico com estes números <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg></a><button class="btn2" type="button" id="cp-sim" style="cursor:pointer;background:none">Copiar resumo</button></div></div>
+<div class="nota">Projeção sobre uma planta de referência: redução de 12 para 5 paradas (proporção mantida), não resultado medido. Valor da assinatura a definir; a projeção não é uma proposta.</div></div></div></div></section>
+<section class="sec alt" id="safra"><div class="w"><div class="eb">Modelo comercial</div><h2>Você paga 8 meses por ano. O mercado cobra 12.</h2>
+<p class="lede">Os concorrentes cobram o ano inteiro, com a fábrica rodando ou não. A Predik acompanha a safra.</p>
+<div class="cmp"><div><div class="eb">Como o mercado cobra</div><b class="t">12 meses</b><div class="meses" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p>Assinatura anual fixa, inclusive na entressafra.</p></div>
+<div class="p"><div class="eb">Como a Predik cobra</div><b class="t">8 meses</b><div class="meses" aria-hidden="true"><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="p"></i><i class="x"></i><i class="x"></i><i class="x"></i><i class="x"></i></div><p>Ativo nos 8 meses da safra, em pausa nos outros 4. São 33% menos meses pagos.</p></div></div>
+<div class="legm"><span>Safra: contrato ativo</span><span>Entressafra: pausa</span></div>
+<div class="inc"><div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" /><path d="M9 9h6v6h-6z" /><path d="M3 10h2" /><path d="M3 14h2" /><path d="M10 3v2" /><path d="M14 3v2" /><path d="M21 10h-2" /><path d="M21 14h-2" /><path d="M14 21v-2" /><path d="M10 21v-2" /></svg><b>Sensor incluso</b>Sem comprar hardware.</div><div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19l16 0" /><path d="M4 15l4 -6l4 2l4 -5l4 4" /></svg><b>Software incluso</b>Plataforma que marca a parada.</div><div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 6h-4a3 3 0 0 0 0 6h1a3 3 0 0 1 0 6h-4" /><path d="M4 18v-12h3a3 3 0 1 1 0 6h-3c5.5 0 5 4 6 6" /><path d="M18 6v-2" /><path d="M17 20v-2" /></svg><b>Preço público</b>Calculado na tela.</div><div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a10 10 0 1 0 20 0" /><path d="M12 19a10 10 0 0 1 10 -10" /><path d="M2 9a10 10 0 0 1 10 10" /><path d="M12 4a9.7 9.7 0 0 1 2.99 7.5" /><path d="M9.01 11.5a9.7 9.7 0 0 1 2.99 -7.5" /></svg><b>Segue a safra</b>Pausa na entressafra.</div></div>
+<div class="acoes" style="margin-top:36px"><a class="btn g" href="#diagnostico">Solicite um diagnóstico da sua planta <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg></a><a class="btn2" href="#preco">Faça uma simulação</a></div>
+</div></section>
+<section class="sec" id="faq"><div class="w"><div class="eb">Perguntas do PCM e do diretor industrial</div><h2>Antes de falar com a gente.</h2>
+<div class="faq">
+<details><summary>Quanto custa?</summary><p>O preço é público e calculado na tela, no simulador, com os números da sua fábrica. Sensor e software estão inclusos na assinatura. O valor final da assinatura ainda está em definição neste protótipo.</p></details>
+<details><summary>O que acontece na entressafra?</summary><p>O contrato pausa. Você paga os 8 meses da safra, não os 12 do ano.</p></details>
+<details><summary>Preciso comprar o sensor?</summary><p>Não. O sensor vem incluso na assinatura, junto com o software que marca a parada.</p></details>
+<details><summary>Os números do site são resultados reais?</summary><p>São projeções sobre uma empresa-base de 300 pessoas, com 40 ativos críticos, 12 paradas por ano de 6 horas e R$ 15.000 por hora de linha parada. No diagnóstico, a conta é refeita com as premissas da sua planta.</p></details>
+<details><summary>O que acontece depois que eu peço o diagnóstico?</summary><p>Você recebe a projeção com os seus números, vê onde estão as paradas que mais pesam e decide com a conta na mão, sem proposta fechada de saída.</p></details>
+</div></div></section>
+<section class="sec final rel" id="diagnostico"><canvas class="heat" data-heat="l" aria-hidden="true"></canvas><div class="w"><div>
+<div class="eb">Diagnóstico da sua planta</div>
+<h2>Cada mês de espera é parada que você já pagou.</h2>
+<p class="lede" style="margin-top:22px">Manutenção preditiva para agroindústria, sensor e software inclusos. Conte onde a sua linha mais para e receba a projeção com os seus números.</p>
+<ul><li>A conta refeita com as premissas da sua planta, não da empresa-base.</li><li>As paradas que mais pesam e o que muda com parada marcada.</li><li>O modelo de 8 meses por ano aplicado à sua safra.</li></ul></div>
+<div><form class="form" id="form-diag" novalidate>
+<div class="r2"><div><label for="f-nome">Nome</label><input id="f-nome" name="nome" autocomplete="name" required></div><div><label for="f-cargo">Cargo</label><select id="f-cargo" name="cargo"><option>PCM / manutenção</option><option>Diretor industrial</option><option>Gerente de planta</option><option>Outro</option></select></div></div>
+<div class="r2"><div><label for="f-email">E-mail corporativo</label><input id="f-email" name="email" type="email" autocomplete="email" required></div><div><label for="f-emp">Empresa</label><input id="f-emp" name="empresa" autocomplete="organization"></div></div>
+<div class="res" id="f-res">Cenário da simulação: <b>40 máquinas, 12 paradas por ano, 6 h por parada, R$ 15.000 por hora</b>.</div>
+<button class="btn" type="submit">Solicite um diagnóstico da sua planta <svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="butt" stroke-linejoin="miter" aria-hidden="true"><path d="M3 12h17M13 5l7 7-7 7"/></svg></button>
+<p class="mini">Este é um protótipo: nenhum dado é enviado.</p></form>
+<div class="ok" id="f-ok" role="status"><h3>Pedido registrado.</h3><p>Neste protótipo nenhum dado foi enviado. Na versão no ar, a Predik responderia com a projeção feita sobre os números do seu cenário.</p></div></div></div></section>
+</main>
+<footer class="rodape"><div class="w"><div><a class="logo-link" href="#topo" aria-label="Predik, voltar ao topo da página"><svg aria-hidden="true" focusable="false" height="56" style="display:block;width:auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 683 256"><path fill-rule="evenodd" d="M68.00 20.00L65.64 20.06L63.30 20.23L60.96 20.52L58.64 20.92L56.34 21.44L54.07 22.07L51.83 22.81L49.63 23.65L47.48 24.61L45.37 25.67L43.32 26.83L41.33 28.09L39.41 29.45L37.55 30.90L35.77 32.43L34.06 34.06L32.43 35.77L30.90 37.55L29.45 39.41L28.09 41.33L26.83 43.32L25.67 45.37L24.61 47.48L23.65 49.63L22.81 51.83L22.07 54.07L21.44 56.34L20.92 58.64L20.52 60.96L20.23 63.30L20.06 65.64L20.00 68.00L20.00 167.55L59.55 128.00L128.00 59.55L196.45 128.00L182.45 114.00L235.48 60.97L235.48 60.96L235.08 58.64L234.56 56.34L233.93 54.07L233.19 51.83L232.35 49.63L231.39 47.48L230.33 45.37L229.17 43.32L227.91 41.33L226.55 39.41L225.10 37.55L223.57 35.77L221.94 34.06L220.23 32.43L218.45 30.90L216.59 29.45L214.67 28.09L212.68 26.83L210.63 25.67L208.52 24.61L206.37 23.65L204.17 22.81L201.93 22.07L199.66 21.44L197.36 20.92L195.04 20.52L192.70 20.23L190.36 20.06L188.00 20.00ZM20.52 195.04L20.92 197.36L21.44 199.66L22.07 201.93L22.81 204.17L23.65 206.37L24.61 208.52L25.67 210.63L26.83 212.68L28.09 214.67L29.45 216.59L30.90 218.45L32.43 220.23L34.06 221.94L35.77 223.57L37.55 225.10L39.41 226.55L41.33 227.91L43.32 229.17L45.37 230.33L47.48 231.39L49.63 232.35L51.83 233.19L54.07 233.93L56.34 234.56L58.64 235.08L60.96 235.48L63.30 235.77L65.64 235.94L68.00 236.00L188.00 236.00L190.36 235.94L192.70 235.77L195.04 235.48L197.36 235.08L199.66 234.56L201.93 233.93L204.17 233.19L206.37 232.35L208.52 231.39L210.63 230.33L212.68 229.17L214.67 227.91L216.59 226.55L218.45 225.10L220.23 223.57L221.94 221.94L223.57 220.23L225.10 218.45L226.55 216.59L227.91 214.67L229.17 212.68L230.33 210.63L231.39 208.52L232.35 206.37L233.19 204.17L233.93 201.93L234.56 199.66L235.08 197.36L235.48 195.04L235.77 192.70L235.94 190.36L236.00 188.00L236.00 88.45L196.45 128.00L128.00 196.45L73.55 142.00L20.52 195.03Z" fill="#F5F2F7"/><path d="M145.11 128.00L128.00 145.11L110.89 128.00L128.00 110.89Z" fill="#34D8C0"/><path fill="#F5F2F7" d="M308.008 180.72V104.80000000000001H320.696V115.72H323.608L320.696 118.736Q320.696 111.768 324.856 107.76400000000001Q329.016 103.76 336.088 103.76Q344.72 103.76 349.92 109.688Q355.12 115.616 355.12 125.6V141.096Q355.12 147.752 352.78 152.692Q350.44 157.632 346.176 160.336Q341.912 163.04 336.088 163.04Q329.016 163.04 324.856 159.036Q320.696 155.032 320.696 148.064L323.608 151.08H320.592L321.008 164.704V180.72ZM331.512 151.808Q336.504 151.808 339.312 148.89600000000002Q342.12 145.984 342.12 140.576V126.224Q342.12 120.816 339.312 117.904Q336.504 114.992 331.512 114.992Q326.624 114.992 323.81600000000003 117.956Q321.008 120.92 321.008 126.224V140.576Q321.008 145.88 323.81600000000003 148.844Q326.624 151.808 331.512 151.808Z M369.176 162.0V104.80000000000001H381.448V115.72H384.67199999999997L380.82399999999996 122.376Q380.82399999999996 113.12 384.984 108.44Q389.144 103.76 397.256 103.76Q406.51199999999994 103.76 411.816 109.48Q417.12 115.2 417.12 125.28800000000001V129.448H403.496V126.224Q403.496 120.712 400.63599999999997 117.696Q397.77599999999995 114.68 392.784 114.68Q387.688 114.68 384.932 117.696Q382.176 120.712 382.176 126.224V162.0Z M450.1039999999999 163.04Q442.82399999999996 163.04 437.41599999999994 160.232Q432.008 157.424 429.044 152.38Q426.0799999999999 147.336 426.0799999999999 140.576V126.224Q426.0799999999999 119.464 429.044 114.42Q432.008 109.376 437.41599999999994 106.56800000000001Q442.82399999999996 103.76 450.1039999999999 103.76Q457.28 103.76 462.63599999999997 106.56800000000001Q467.99199999999996 109.376 470.95599999999996 114.42Q473.91999999999996 119.464 473.91999999999996 126.224V136.52H438.66399999999993V140.576Q438.66399999999993 146.608 441.5759999999999 149.676Q444.48799999999994 152.744 450.20799999999997 152.744Q454.57599999999996 152.744 457.28 151.236Q459.9839999999999 149.728 460.71199999999993 146.816H473.50399999999996Q472.04799999999994 154.2 465.65199999999993 158.62Q459.256 163.04 450.1039999999999 163.04ZM461.33599999999996 129.24V126.12Q461.33599999999996 120.19200000000001 458.52799999999996 117.02000000000001Q455.71999999999997 113.848 450.1039999999999 113.848Q444.48799999999994 113.848 441.5759999999999 117.072Q438.66399999999993 120.29599999999999 438.66399999999993 126.224V128.40800000000002L462.27199999999993 128.2Z M504.51199999999994 163.04Q495.9839999999999 163.04 490.7319999999999 157.112Q485.4799999999999 151.184 485.4799999999999 141.2V125.70400000000001Q485.4799999999999 115.616 490.67999999999995 109.688Q495.87999999999994 103.76 504.51199999999994 103.76Q511.58399999999995 103.76 515.7439999999999 107.76400000000001Q519.9039999999999 111.768 519.9039999999999 118.736L516.992 115.72H520.0079999999999L519.5919999999999 102.096V86.08H532.5919999999999V162.0H519.9039999999999V151.08H516.992L519.9039999999999 148.064Q519.9039999999999 155.032 515.7439999999999 159.036Q511.58399999999995 163.04 504.51199999999994 163.04ZM509.0879999999999 151.808Q514.0799999999999 151.808 516.8359999999999 148.844Q519.5919999999999 145.88 519.5919999999999 140.576V126.224Q519.5919999999999 120.92 516.8359999999999 117.956Q514.0799999999999 114.992 509.0879999999999 114.992Q504.09599999999995 114.992 501.2879999999999 117.904Q498.4799999999999 120.816 498.4799999999999 126.224V140.576Q498.4799999999999 145.984 501.2879999999999 148.89600000000002Q504.09599999999995 151.808 509.0879999999999 151.808Z M545.5039999999999 162.0V150.144H565.4719999999999V116.55199999999999H548.1039999999999V104.80000000000001H577.9519999999999V150.144H595.632V162.0ZM570.6719999999999 95.232Q566.7199999999999 95.232 564.4319999999999 93.20400000000001Q562.1439999999999 91.176 562.1439999999999 87.744Q562.1439999999999 84.312 564.4319999999999 82.28399999999999Q566.7199999999999 80.256 570.6719999999999 80.256Q574.6239999999999 80.256 576.9119999999998 82.28399999999999Q579.1999999999998 84.312 579.1999999999998 87.744Q579.1999999999998 91.176 576.9119999999998 93.20400000000001Q574.6239999999999 95.232 570.6719999999999 95.232Z M605.3199999999999 162.0V86.08H618.3199999999999V127.26400000000001H627.3679999999999L641.3039999999999 104.80000000000001H655.8639999999999L638.5999999999999 132.464L656.1759999999999 162.0H641.3039999999999L627.3679999999999 138.288H618.3199999999999V162.0Z"/></svg></a><div class="tg">Manutenção preditiva para a agroindústria.</div></div>
+<div>Construído por <a href="https://akaishidesign.com.br" target="_blank" rel="noopener">Akaishi Design Studio</a></div></div></footer>
+
+<script src="assets/sensor-3d.js" defer></script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
