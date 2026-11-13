@@ -7,8 +7,9 @@ Publicado em: https://erik-akaishi.github.io/predik/
 ## Estrutura
 
 - `index.html`: a página (SEO, Open Graph e JSON-LD no `<head>`)
-- `assets/sensor-3d.js`: sensor 3D da seção "O sensor" (Three.js embutido), só renderiza quando a seção está na tela
-- `assets/site.js`: simulador, contador de perdas, formulário (demonstração), menu e campos de calor
+- `assets/sensor-boot.js`: prepara a seção "O sensor" e carrega o 3D só quando ela se aproxima da tela
+- `assets/sensor-3d.js`: sensor 3D (Three.js embutido), carregado sob demanda e pausado fora da tela
+- `assets/site.js`: simulador, contador de perdas, formulário (demonstração), menu, campos de calor e animações de entrada (respeitam prefers-reduced-motion)
 - `assets/img`, `assets/fonts`: imagens do sensor e JetBrains Mono (woff2)
 - `robots.txt`, `sitemap.xml`, `llms.txt`: rastreamento, indexação e leitura por IA
 - `404.html`, `.nojekyll`, favicons

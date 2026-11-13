@@ -1,0 +1,23 @@
+{
+  "name": "Predik",
+  "short_name": "Predik",
+  "description": "Manutenção preditiva para agroindústria, com sensor e software inclusos. Projeção: de 12 para 5 paradas por ano, em uma planta de 300 pessoas. Solicite um diagnóstico.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#140F26",
+  "theme_color": "#140F26",
+  "icons": [
+    {
+      "src": "assets/logo-predik.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

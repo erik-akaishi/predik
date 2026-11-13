@@ -43,3 +43,24 @@ var bg=g("burger"),nv=document.querySelector(".nav");if(bg&&nv){function fe(o){n
  addEventListener("resize",function(){if(innerWidth>860)fe(false)});}
 document.querySelectorAll("canvas[data-heat]").forEach(function(c){heat(c,c.getAttribute("data-heat"))});
 })();
+
+
+(function(){
+  var SEL=["#dor .w>.eb", "#dor .w>h2", ".dores>div", ".conta", ".perda", "#transformacao .w>.eb", "#transformacao .w>h2", ".dte .rw", "#transformacao .w>.nota", "#dinheiro .w>.eb", "#dinheiro .w>h2", ".cx>div", ".itens>div", "#dinheiro .w>.acoes", "#sensor .w>.eb", "#sensor .w>h2", "#sensor .w>.lede", "#como .w>.eb", "#como .w>h2", ".tres .card", ".banda .w", "#preco .w>.eb", "#preco .w>h2", "#preco .w>.lede", ".sim", "#safra .w>.eb", "#safra .w>h2", "#safra .w>.lede", ".cmp>div", ".legm", ".inc>div", "#safra .w>.acoes", "#faq .w>.eb", "#faq .w>h2", ".faq details", "#diagnostico .w>div"], CH=[".viz", ".mem", ".meses", ".barra"], els=[];
+  SEL.concat(CH).forEach(function(q){ [].forEach.call(document.querySelectorAll(q),function(e){ if(els.indexOf(e)<0) els.push(e); }); });
+  var rm=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(rm||!("IntersectionObserver" in window)){ els.forEach(function(e){ e.classList.add("in"); }); return; }
+  els.forEach(function(e){
+    var i=[].indexOf.call(e.parentNode.children,e); e.style.setProperty("--d",(Math.min(i,5)*0.1).toFixed(1)+"s");
+  });
+  [].forEach.call(document.querySelectorAll(".viz,.meses"),function(c){ [].forEach.call(c.children,function(ch,i){ ch.style.setProperty("--k",i); }); });
+  [].forEach.call(document.querySelectorAll(".mem"),function(c){ [].forEach.call(c.querySelectorAll("i"),function(ch,i){ ch.style.setProperty("--k",i); }); });
+  [].forEach.call(document.querySelectorAll(".barra"),function(c,i){ c.querySelector("div").style.setProperty("--k",i*4); });
+  var visto=false;
+  var io=new IntersectionObserver(function(es){
+    visto=true;
+    es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+  },{threshold:0.12,rootMargin:"0px 0px -6% 0px"});
+  els.forEach(function(e){ io.observe(e); });
+  setTimeout(function(){ if(!visto) els.forEach(function(e){ e.classList.add("in"); }); },2500);
+})();
